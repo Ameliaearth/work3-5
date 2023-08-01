@@ -202,9 +202,17 @@ h4{
     object-fit:contain;
     background-position: center center;
 }
-.list-4>img{
+.pic1{
+    background-image:url(../../assets/images/home-section4-1.png);
     width: 648px;
     height: 240px;
+    background-size: contain;
+}
+.pic2{
+    background-image:url(../../assets/images/home-section4-2.png);
+    width: 648px;
+    height: 240px;
+    background-size: contain;
 }
 .mb-48{
     margin-bottom: 48px;
@@ -347,11 +355,7 @@ h4{
     justify-content: space-around;
 }
 /*:hover*/
-.box-3>li>a:hover,
-.cor-b:hover,
-.list-8>a:hover,
-.list-9>a:hover,
-.nav-4>li>a:hover{
+.trs-cor:hover{
     transition: all 1s ease;
     color:#000;
 }
@@ -365,19 +369,31 @@ h4{
         max-width:768px;
     }
 
+    /*header-2*/
     .header-2{
-        background-size: cover;
-        background-position: center center;
-        width: 768px;
-        height: 787px;
-        display: flex;
-        align-items: center;
-        background-repeat: no-repeat;
+        background-image:url(../../assets/images/home-header-sm.png);
     }
     .item-1{
         padding-right: 36px;
     }
 
+    /*section-1*/
+    .content-1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*section-2*/
+    .section-2{
+        background-image:url(../../assets/images/index-bg-sm.png);
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+    }
+    
+    /*ariticle*/
     .ariticle{
         padding: 0 36px;
     }
@@ -387,18 +403,15 @@ h4{
         justify-content: center;
         align-items: center;
     }
-    .rwd-mr24{
-        margin-right: -24px;
-    }
     .list-2{
         width: 336px;
     }
 
-    .content-1{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+    /*tab-box-bun*/
+    .botton-2{
+        padding: 16px 25%;
     }
+
     .rwd-fcc{
         display: flex;
         align-items: center;
@@ -408,11 +421,13 @@ h4{
     .rwd-mb80{
         padding: 80px 0;
     }
-
     .fw-cc{
         display: flex;
         flex-wrap:wrap;
         align-items: center;
+    }
+    .rwd-mr24{
+        margin-right: -24px;
     }
     .rwd-mb24{
         margin-bottom: 24px;
@@ -421,20 +436,18 @@ h4{
         margin-right: -12px;
         margin-left: -12px;
     }
-
-    
-    .botton-2{
-        padding: 16px 25%;
-    }
     .rwd-main-70{
         max-width: 85%;
     }
 }
+
 @media (max-width:375px){
     .container{
         max-width:375px;
         padding: 0; /*移除父層的內縮*/
     }
+
+    /*header-1*/
     .header-1{
         display: flex;
         flex-wrap: wrap;
@@ -449,6 +462,63 @@ h4{
         width: 50%;
         text-align: center;
         border:1px solid #fff;
+    }
+
+    /*header-2*/
+    .header-2{
+        background-image:url(../../assets/images/home-header-sm.png);
+        width: 375px;
+        height: 396px;
+    }
+
+    /*section-1*/
+    .list-3>img{
+        width: 348px;
+        height: 348px;
+    }
+
+    /*section-2*/
+    .pic1{
+        background-image:url(../../assets/images/home-section4-1-sm.png);
+        width: 348px;
+        height: 240px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .pic2{
+        background-image:url(../../assets/images/home-section4-2-sm.png);
+        width: 348px;
+        height: 240px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    /*tab-box-bun*/
+    .botton-2{
+        width: 348px;
+    }
+
+    /*footer*/
+    .footer{
+        padding: 24px 14px 0 13px;
+    }
+    .box-3{
+        display: none;
+    }
+    .list-10>a>img{
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    .nav-2{
+        justify-content: space-between;
+        align-self: flex-start;
+    }
+    .box-4{
+        margin-top: 0;
+    }
+    .nav-4{
+        flex-direction: column;
     }
 
     .rwd-fs24{
@@ -471,47 +541,5 @@ h4{
     }
     .rwd-mb8{
         margin-bottom: 8px;
-    }
-
-
-    .list-3>img{
-        width: 348px;
-        height: 348px;
-    }
-    .list-4>img{
-        object-fit:cover;
-        background-position: center center;
-        display: flex;
-        align-items: center;
-
-        width: 348px;
-        height: 240px;
-    }
-
-    .botton-2{
-        width: 348px;
-
-    }
-    
-    .footer{
-        padding: 24px 14px 0 13px;
-    }
-    .box-3{
-        display: none;
-    }
-    .list-10>a>img{
-        display: block;
-        width: 24px;
-        height: 24px;
-    }
-    .nav-2{
-        justify-content: space-between;
-        align-self: flex-start;
-    }
-    .box-4{
-        margin-top: 0;
-    }
-    .nav-4{
-        flex-direction: column;
     }
 }
