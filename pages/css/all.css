@@ -237,9 +237,6 @@ h4{
     width: 306px;
     height: 551px;
 }
-.fs-16{
-    font-size: 16px;
-}
 .m-16{
     margin: 16px;
 }
@@ -332,6 +329,9 @@ h4{
 }
 .area-3{
     padding-bottom: 32px;
+}
+.fs-14{
+    font-size: 14px;
 }
 /*jcsb*/
 .eara-2{
