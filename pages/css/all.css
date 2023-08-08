@@ -196,12 +196,10 @@ h4{
 }
 
 /*section-1*/
-.content-1{
-    padding: 0 12px;
-}
+
 .list-3{
-   /*width: 416px;
-   height: auto;*/
+   /*width: 416px;*/
+   height: auto;
    
 }
 .title-3{
@@ -391,6 +389,7 @@ h4{
     .container{
         max-width:720px;
     }
+    
 
 }
 
