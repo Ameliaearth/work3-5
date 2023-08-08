@@ -52,6 +52,7 @@ table {
 }
 img{
 	max-width:100%;
+    height: 100%;
 	margin:0 auto;
     vertical-align: middle;
 }
@@ -61,10 +62,11 @@ body{
     line-height:1.5;
 }
 
+
 /*header-1*/
 .container{
     max-width:1320px;
-    padding: 0 36px;
+    padding: 0 12px;
     margin: 0 auto;
 }
 .header-1{
@@ -73,6 +75,7 @@ body{
     align-items: center;
 }
 .nav-1>li{
+    display: block;
     padding: 25px 32px;
 }
 .nav-1>li>a:hover{
@@ -109,14 +112,15 @@ h1 a{
     display: flex;
     align-items: center;
     max-width:100%;
+    height: 787px;
 }
 .item-1{
     width: 100%;
     text-align:right;
     display: flex;
+    align-items: flex-end;
     flex-direction: column;
 
-    padding: 296px 0;
     padding-right: 36px;
 }
 .cor-r{
@@ -150,6 +154,9 @@ h1 a{
 .bg-pk{
     background: #FBF2F2;
 }
+.ariticle{
+    padding: 80px 36px;
+}
 .f-jcc{
     display: flex;
     justify-content: center;
@@ -166,6 +173,10 @@ h1 a{
 }
 .list-2>p{
     text-align:left;
+}
+.list-2>img{
+    width: 100px;
+    height: 100px;
 }
 .mr-24{
     margin-right:24px;
@@ -185,9 +196,16 @@ h4{
 }
 
 /*section-1*/
-.list-3>img{
-    width: 416px;
-    height: 416px;
+.content-1{
+    padding: 0 12px;
+}
+.list-3{
+   /*width: 416px;
+   height: auto;*/
+   
+}
+.title-3{
+    font-style: italic;
 }
 .m-24{
     margin: 0 24px;
@@ -199,20 +217,21 @@ h4{
 /*section-2*/
 .section-2{
     background-image:url(https://drive.google.com/uc?export=view&id=1w2GW2Xy6G1Sx2OiPhSGHbXkNHLUah0Y8);
-    object-fit:contain;
+    background-size: cover;
     background-position: center center;
 }
+.content-2{
+    padding: 0 12px;
+    padding-top: 80px;
+}
+.list-4{
+    padding-bottom: 80px;
+}
 .pic1{
-    background-image:url(../../assets/images/home-section4-1.png);
-    width: 648px;
-    height: 240px;
-    background-size: contain;
+    height: auto;
 }
 .pic2{
-    background-image:url(../../assets/images/home-section4-2.png);
-    width: 648px;
-    height: 240px;
-    background-size: contain;
+    height: auto;
 }
 .mb-48{
     margin-bottom: 48px;
@@ -226,12 +245,14 @@ h4{
 }
 .title-2{
     border-left:1px solid #DEE2E6;
+    font-style: italic;
 }
 
 /*aside*/
 .list-5>img{
-    max-width: 306px;
-    height: 306px;
+    /*max-width: 306px;*/
+    max-width: 100%;
+    height: auto;
 }
 .list-5{
     width: 306px;
@@ -241,7 +262,7 @@ h4{
     margin: 16px;
 }
 .m-8{
-    margin: 8px 0 72px 0;
+    margin: 8px 16px 72px 16px;
 }
 .list-5{
     box-shadow: 0px 2px 6px #00000029;
@@ -268,6 +289,8 @@ h4{
     margin-bottom: 8px;
 }
 .box-1{
+    background-color: #FBF2F2;
+    border:1px solid #000;
     margin-bottom: 16px;
     padding: 6px 0;
     padding-left: 12px;
@@ -328,11 +351,13 @@ h4{
     align-self:center
 }
 .area-3{
-    padding-bottom: 32px;
+    padding: 32px 0;
+    border-top:1px solid #fff;
 }
 .fs-14{
     font-size: 14px;
 }
+
 /*jcsb*/
 .eara-2{
     display: flex;
@@ -347,9 +372,7 @@ h4{
     margin-right: 32px;
 }
 /*sub*/
-.sub{
-    border-bottom:1px solid #fff;
-}
+
 .nav-4{
     display: flex;
     justify-content: space-around;
@@ -364,6 +387,13 @@ h4{
 }
 
 /*RWD*/
+@media (max-width:992px){
+    .container{
+        max-width:720px;
+    }
+
+}
+
 @media (max-width:768px){
     .container{
         max-width:768px;
@@ -383,6 +413,10 @@ h4{
         align-items: center;
         flex-direction: column;
     }
+    .list-3>img{
+        width: 336px;
+        height: auto;
+    }
 
     /*section-2*/
     .section-2{
@@ -395,7 +429,7 @@ h4{
     
     /*ariticle*/
     .ariticle{
-        padding: 0 36px;
+        padding: 80px 36px;
     }
     .item-2{
         display: flex;
@@ -406,6 +440,7 @@ h4{
     .list-2{
         width: 336px;
     }
+    
 
     /*tab-box-bun*/
     .botton-2{
@@ -413,9 +448,10 @@ h4{
     }
 
     .rwd-fcc{
-        display: flex;
+        /*display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center;*/
+        flex-wrap: wrap;
         flex-direction: column;
     }
     .rwd-mb80{
@@ -438,6 +474,10 @@ h4{
     }
     .rwd-main-70{
         max-width: 85%;
+    }
+    .rwd-m36{
+        padding-left: 36px;
+        padding-right: 36px;
     }
 }
 
@@ -474,7 +514,15 @@ h4{
     /*section-1*/
     .list-3>img{
         width: 348px;
-        height: 348px;
+        height: auto;
+    }
+    .rwd-col{
+        align-items: center;
+        flex-direction:column;
+    }
+    .rwd-m-24{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     /*section-2*/
